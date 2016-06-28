@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\2-HomeWork\\SimpleAudioPlayer\\MySocketClient\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\2-HomeWork\\SimpleAudioPlayer\\MySocketClient\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\SimpleAudioPlayer\\MySocketClient\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\SimpleAudioPlayer\\MySocketClient\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\SimpleAudioPlayer\\MySocketClient\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\1-Learn\\SimpleAudioPlayer\\MySocketClient\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\fangc\\AndroidStudioProjects\\2-HomeWork\\SimpleAudioPlayer\\MySocketClient\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\fangc\\AndroidStudioProjects\\2-HomeWork\\SimpleAudioPlayer\\MySocketClient\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    }
+]

@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.jikexueyuan.locatebybaidumap"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {//疑惑1、签名配置，仅仅是为了在别的电脑上方便调试吗？
+        debugName {//debug版签名配置
+            storeFile file("key.store")//疑惑2、这里可以是key.store文件或者AndroidSignedName.jks文件吗？
+            // .jks是指密钥签名文件，.store是前者的容器（叫签名包），所以两种都行。
+            storePassword "123456"
+            keyAlias "key"
+            keyPassword "654321"
+        }
+    }
+    buildTypes {//告知程序调试类型及签名文件之所在：debug版{签名文件的路径}（如果signingConfigs只有debug版
+    // ，那么这里可以不用配置，如果还有使用不同密钥(.jks)的release版，则需要在此配置区分）
+        debug {
+            signingConfig signingConfigs.debugName
+        }
+    }
+}
+/*//疑惑1、签名配置，仅仅是为了在别的电脑上方便调试吗？不完全是，此处是debug{...}的签名配置是这个原因，
+    // 不然老师电脑上的sha1值与本机不同，还需要老师自己去申请AK来使用百度的定位功能；此外发布版（release版）当然也需要
+    // 签名配置。
+    //        debug {//debug版签名配置
+    //疑惑3、对于.store应该放在...LocateByBaiduMap/app/路径下；而对于.jks直接放在...LocateByBaiduMap/路径下吗？
+    // 答：随便放，在此指明就行 storeFile file("key.store")，此处是相对bulid.gradle在同一路径下。*/
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('libs/baidumapapi_base_v3_7_0.jar')
+    compile files('libs/baidumapapi_map_v3_7_0.jar')
+    compile files('libs/baidumapapi_util_v3_7_0.jar')
+    compile files('libs/locSDK_6.13.jar')
+}
