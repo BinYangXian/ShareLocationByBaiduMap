@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/mina-example-2.0.9-sources.jar!/" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-benchmarks/src/test/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-core/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-core/src/test/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-example/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-example/src/test/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-filter-compression/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-filter-compression/src/test/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-http/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-http/src/test/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-integration-beans/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-integration-beans/src/test/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-integration-jmx/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-integration-ognl/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-integration-xbean/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-integration-xbean/src/test/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-statemachine/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-statemachine/src/test/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-transport-apr/src/main/java" />
+      <root url="file://E:/Download_Firefox/mina/apache-mina-2.0.9-src/apache-mina-2.0.9/src/mina-transport-serial/src/main/java" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/libs" recursive="false" />
+  </library>
+</component>

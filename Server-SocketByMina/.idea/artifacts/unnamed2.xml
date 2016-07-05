@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="unnamed2">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="unnamed.war" />
+  </artifact>
+</component>

@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.jikexueyuan.locatebybaidumap"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {//疑惑1、签名配置，仅仅是为了在别的电脑上方便调试吗？已知
+        debug {//debug版签名配置
+            storeFile file("key.store")//疑惑2、这里可以是key.store文件或者AndroidSignedName.jks文件吗？已知
+            // 对于.store应该放在...LocateByBaiduMap/app/路径下；而对于.jks直接放在...LocateByBaiduMap/路径下吗？已知
+            storePassword "123456"
+            keyAlias "key"
+            keyPassword "654321"
+        }
+        release {//debug版签名配置
+            storeFile file("key.store")//疑惑2、这里可以是key.store文件或者AndroidSignedName.jks文件吗？已知
+            // 对于.store应该放在...LocateByBaiduMap/app/路径下；而对于.jks直接放在...LocateByBaiduMap/路径下吗？已知
+            storePassword "123456"
+            keyAlias "key"
+            keyPassword "654321"
+        }
+    }
+    //疑惑3、下边注释的代码属于默认配置，也就是说不写就表示是debug版本 的发布吧？但是建议写上,此外再加上release版
+    buildTypes {
+        debug {//调试
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+        flavor {
+            minSdkVersion 14
+            applicationId 'com.jikexueyuan.locatebybaidumap'
+            signingConfig signingConfigs.release
+            targetSdkVersion 23
+            versionCode 2
+            versionName '2.0'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile files('libs/baidumapapi_base_v3_7_0.jar')
+    compile files('libs/baidumapapi_map_v3_7_0.jar')
+    compile files('libs/baidumapapi_util_v3_7_0.jar')
+    compile files('libs/locSDK_6.13.jar')
+}
